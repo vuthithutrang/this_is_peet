@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>peet</title>
+
+	<link rel='stylesheet' id='structured-content-frontend-css' href='style.css' media='all' />
+	<link rel='stylesheet' id='astra-theme-css-css'
+		href='https://thucung.farmvina.com/wp-content/themes/astra/assets/css/minified/main.min.css?ver=3.9.2'
+		media='all' />
+	<link rel='stylesheet' id='astra-theme-dynamic-css'
+		href='https://thucung.farmvina.com/wp-content/uploads/astra/astra-theme-dynamic-css-post-4720.css?ver=1665461290'
+		media='all' />
+	<link rel='stylesheet' id='wp-block-library-css'
+		href='https://thucung.farmvina.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2' media='all' />
+	<style id='global-styles-inline-css'>
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--ast-global-color-0: var(--ast-global-color-0);
+			--wp--preset--color--ast-global-color-1: var(--ast-global-color-1);
+			--wp--preset--color--ast-global-color-2: var(--ast-global-color-2);
+			--wp--preset--color--ast-global-color-3: var(--ast-global-color-3);
+			--wp--preset--color--ast-global-color-4: var(--ast-global-color-4);
+			--wp--preset--color--ast-global-color-5: var(--ast-global-color-5);
+			--wp--preset--color--ast-global-color-6: var(--ast-global-color-6);
+			--wp--preset--color--ast-global-color-7: var(--ast-global-color-7);
+			--wp--preset--color--ast-global-color-8: var(--ast-global-color-8);
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+			--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+			--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+			--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+			--wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+			--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+			--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+			--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+		}
+
+		body {
+			margin: 0;
+		}
+
+		body {
+			--wp--style--block-gap: 24px;
+		}
+
+		.wp-site-blocks>.alignleft {
+			float: left;
+			margin-right: 2em;
+		}
+
+		.wp-site-blocks>.alignright {
+			float: right;
+			margin-left: 2em;
+		}
+
+		.wp-site-blocks>.aligncenter {
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.wp-site-blocks>* {
+			margin-block-start: 0;
+			margin-block-end: 0;
+		}
+
+		.wp-site-blocks>*+* {
+			margin-block-start: var(--wp--style--block-gap);
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-ast-global-color-0-color {
+			color: var(--wp--preset--color--ast-global-color-0) !important;
+		}
+
+		.has-ast-global-color-1-color {
+			color: var(--wp--preset--color--ast-global-color-1) !important;
+		}
+
+		.has-ast-global-color-2-color {
+			color: var(--wp--preset--color--ast-global-color-2) !important;
+		}
+
+		.has-ast-global-color-3-color {
+			color: var(--wp--preset--color--ast-global-color-3) !important;
+		}
+
+		.has-ast-global-color-4-color {
+			color: var(--wp--preset--color--ast-global-color-4) !important;
+		}
+
+		.has-ast-global-color-5-color {
+			color: var(--wp--preset--color--ast-global-color-5) !important;
+		}
+
+		.has-ast-global-color-6-color {
+			color: var(--wp--preset--color--ast-global-color-6) !important;
+		}
+
+		.has-ast-global-color-7-color {
+			color: var(--wp--preset--color--ast-global-color-7) !important;
+		}
+
+		.has-ast-global-color-8-color {
+			color: var(--wp--preset--color--ast-global-color-8) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-ast-global-color-0-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-0) !important;
+		}
+
+		.has-ast-global-color-1-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-1) !important;
+		}
+
+		.has-ast-global-color-2-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-2) !important;
+		}
+
+		.has-ast-global-color-3-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-3) !important;
+		}
+
+		.has-ast-global-color-4-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-4) !important;
+		}
+
+		.has-ast-global-color-5-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-5) !important;
+		}
+
+		.has-ast-global-color-6-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-6) !important;
+		}
+
+		.has-ast-global-color-7-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-7) !important;
+		}
+
+		.has-ast-global-color-8-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-8) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-ast-global-color-0-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-0) !important;
+		}
+
+		.has-ast-global-color-1-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-1) !important;
+		}
+
+		.has-ast-global-color-2-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-2) !important;
+		}
+
+		.has-ast-global-color-3-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-3) !important;
+		}
+
+		.has-ast-global-color-4-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-4) !important;
+		}
+
+		.has-ast-global-color-5-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-5) !important;
+		}
+
+		.has-ast-global-color-6-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-6) !important;
+		}
+
+		.has-ast-global-color-7-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-7) !important;
+		}
+
+		.has-ast-global-color-8-border-color {
+			border-color: var(--wp--preset--color--ast-global-color-8) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+	</style>
+
+	<link rel='stylesheet' id='astra-addon-css-css'
+		href='https://thucung.farmvina.com/wp-content/uploads/astra-addon/astra-addon-63197dc70b8db8-55785881.css?ver=3.6.8'
+		media='all' />
+	<link rel='stylesheet' id='astra-addon-dynamic-css'
+		href='https://thucung.farmvina.com/wp-content/uploads/astra-addon/astra-addon-dynamic-css-post-4720.css?ver=1665461290'
+		media='all' />
+	<link rel='stylesheet' id='elementor-icons-css'
+		href='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.12.0'
+		media='all' />
+	<link rel='stylesheet' id='elementor-frontend-css'
+		href='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.4.4'
+		media='all' />
+	<style id='elementor-frontend-inline-css'>
+		@font-face {
+			font-family: eicons;
+			src: url(https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0);
+			src: url(https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.10.0#iefix) format("embedded-opentype"), url(https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.10.0) format("woff2"), url(https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.10.0) format("woff"), url(https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.10.0) format("truetype"), url(https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.10.0#eicon) format("svg");
+			font-weight: 400;
+			font-style: normal
+		}
+	</style>
+	<link rel='stylesheet' id='elementor-post-4675-css'
+		href='https://thucung.farmvina.com/wp-content/uploads/elementor/css/post-4675.css?ver=1633001200' media='all' />
+	<link rel='stylesheet' id='elementor-pro-css'
+		href='https://thucung.farmvina.com/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.2.2'
+		media='all' />
+	<link rel='stylesheet' id='font-awesome-5-all-css'
+		href='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.4.4'
+		media='all' />
+	<link rel='stylesheet' id='font-awesome-4-shim-css'
+		href='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.4.4'
+		media='all' />
+	<link rel='stylesheet' id='elementor-global-css'
+		href='https://thucung.farmvina.com/wp-content/uploads/elementor/css/global.css?ver=1633001200' media='all' />
+	<link rel='stylesheet' id='elementor-post-4720-css'
+		href='https://thucung.farmvina.com/wp-content/uploads/elementor/css/post-4720.css?ver=1633005013' media='all' />
+	<link rel='stylesheet' id='astra-child-theme-css-css'
+		href='https://thucung.farmvina.com/wp-content/themes/astra-child/style.css?ver=1.0.0' media='all' />
+	<link rel='stylesheet' id='google-fonts-1-css'
+		href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=vietnamese&#038;ver=6.0.2'
+		media='all' />
+
+	<script src='https://thucung.farmvina.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0'
+		id='jquery-core-js'></script>
+	<script src='https://thucung.farmvina.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2'
+		id='jquery-migrate-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.4.4'
+		id='font-awesome-4-shim-js'></script>
+	<link rel="https://api.w.org/" href="https://thucung.farmvina.com/wp-json/" />
+	<link rel="alternate" type="application/json" href="https://thucung.farmvina.com/wp-json/wp/v2/pages/4720" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thucung.farmvina.com/xmlrpc.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml"
+		href="https://thucung.farmvina.com/wp-includes/wlwmanifest.xml" />
+	<meta name="generator" content="WordPress 6.0.2" />
+	<link rel='shortlink' href='https://thucung.farmvina.com/?p=4720' />
+	<link rel="alternate" type="application/json+oembed"
+		href="https://thucung.farmvina.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthucung.farmvina.com%2Fblog%2F" />
+	<link rel="alternate" type="text/xml+oembed"
+		href="https://thucung.farmvina.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthucung.farmvina.com%2Fblog%2F&#038;format=xml" />
+
+
+</head>
+
+<body data-rsssl=1 itemtype='https://schema.org/WebPage' itemscope='itemscope'
+	class="page-template-default page page-id-4720 wp-custom-logo ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.9.2 elementor-default elementor-kit-4675 elementor-page elementor-page-4720 astra-addon-3.6.8">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0.49803921568627" />
+					<feFuncG type="table" tableValues="0 0.49803921568627" />
+					<feFuncB type="table" tableValues="0 0.49803921568627" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 0.27843137254902" />
+					<feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0" />
+					<feFuncG type="table" tableValues="0 0.64705882352941" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.78039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.94901960784314" />
+					<feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.44705882352941 0.4" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.098039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.66274509803922" />
+					<feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
+		Skip to content</a>
+	<div class="hfeed site" id="page">
+
+		<div class="entry-content clear" itemprop="text">
+
+			<div class="pf-content">
+				<div data-elementor-type="wp-page" data-elementor-id="4720" class="elementor elementor-4720"
+					data-elementor-settings="[]">
+					<div class="elementor-section-wrap">
+						<section
+							class="elementor-section elementor-top-section elementor-element elementor-element-a7a61fc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="a7a61fc" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-00a3b4b"
+									data-id="00a3b4b" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-2a26cd1 elementor-widget elementor-widget-heading"
+											data-id="2a26cd1" data-element_type="widget"
+											data-widget_type="heading.default">
+											<div class="elementor-widget-container">
+												<div class="elementor-widget-wrap elementor-element-populated">
+													<div class="elementor-element elementor-element-28a8eda elementor-widget elementor-widget-button"
+														data-id="28a8eda" data-element_type="widget" data-widget_type="button.default">
+														<div class="elementor-widget-container">
+															<div class="elementor-button-wrapper">
+																<a href="page.html" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+																	<span class="elementor-button-content-wrapper">
+																		<span class="elementor-button-text"> << Về Trang Chủ</span>
+																	</span>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<h2 class="elementor-heading-title elementor-size-default">Bài Viết Mới
+													Nhất</h2>
+											</div>
+										</div>
+										<section
+											class="elementor-section elementor-inner-section elementor-element elementor-element-c0db39d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+											data-id="c0db39d" data-element_type="section">
+											<div class="elementor-container elementor-column-gap-default">
+												<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-debe266"
+													data-id="debe266" data-element_type="column">
+													<div class="elementor-widget-wrap elementor-element-populated">
+														<div class="elementor-element elementor-element-2474bd2 elementor-widget elementor-widget-text-editor"
+															data-id="2474bd2" data-element_type="widget"
+															data-widget_type="text-editor.default">
+															<div class="elementor-widget-container">
+																<p>TỔNG HỢP TẤT CẢ CẤC BÀI VIẾT THUỘC CÁC CHUYÊN MỤC KHÁC NHAU CỦA PEET </p>																									
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section
+							class="elementor-section elementor-top-section elementor-element elementor-element-8c94028 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+							data-id="8c94028" data-element_type="section">
+							<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2850019"
+									data-id="2850019" data-element_type="column">
+									<div class="elementor-widget-wrap elementor-element-populated">
+										<div class="elementor-element elementor-element-0a49855 elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts"
+											data-id="0a49855" data-element_type="widget"
+											data-settings="{&quot;classic_columns&quot;:&quot;3&quot;,&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:35,&quot;sizes&quot;:[]}}"
+											data-widget_type="posts.classic">
+											<div class="elementor-widget-container">
+												<div
+													class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+													<article
+														class="elementor-post elementor-grid-item post-4288 post type-post status-publish format-standard has-post-thumbnail hentry category-meo-ai-cap tag-farmvina tag-gia-ban-meo-ai-cap tag-meo-ai-cap tag-meo-canh tag-mua-meo-ai-cap tag-nuoi-meo-ai-cap">
+														<a class="elementor-post__thumbnail__link" href="meoaicap.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="150"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2020/10/meo-Ai-Cap-2-300x150.jpg"
+																	class="attachment-medium size-medium"
+																	alt="mèo Ai Cập" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2020/10/meo-Ai-Cap-2-300x150.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2020/10/meo-Ai-Cap-2-1024x512.jpg 1024w, https://thucung.farmvina.com/wp-content/uploads/2020/10/meo-Ai-Cap-2-768x384.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2020/10/meo-Ai-Cap-2.jpg 1200w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="meoaicap.html" target="_blank">
+																	Mèo Ai Cập: Cách nuôi và giá bán ra sao? </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	16/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Có ngoại hình hết sức độc lạ, Mèo Ai Cập (mèo Sphynx)
+																	tuy không có vẻ ngoài xinh đẹp, đáng yêu như các
+																	giống mèo khác, tuy nhiên lại rất được giới thượng
+																	lưu ưa chuộng và có giá rất cao. Cách nuôi giống mèo
+																	này như thế nào? Giá bán bao nhiêu và mua</p>
+															</div>
+															<a class="elementor-post__read-more" href="meoaicap.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-3542 post type-post status-publish format-standard has-post-thumbnail hentry category-ga-noi tag-ga-choi tag-ga-noi-2 tag-ga-da tag-nuoi-ga-da">
+														<a class="elementor-post__thumbnail__link" href="gada.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="225"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2019/08/ga-noi-1-300x225.jpg"
+																	class="attachment-medium size-medium"
+																	alt="nuôi gà đá" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2019/08/ga-noi-1-300x225.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2019/08/ga-noi-1-768x576.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2019/08/ga-noi-1.jpg 1024w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="gada.html" target="_blank">
+																	Nuôi gà đá làm giàu, tại sao không? </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	15/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Gà đá hay còn gọi là gà chọi. Nuôi gà đá không đơn
+																	giản như nhiều người nghĩ. Nếu không biết cách nuôi
+																	thì rất khó có thể nuôi gà được hiệu quả và mang lại
+																	khả năng đá tốt. Chúng tôi sẽ giúp bạn tìm hiểu xem
+																	cách nuôi gà đá như thế nào mới hiệu quả nhé. Gà</p>
+															</div>
+															<a class="elementor-post__read-more" href="gada.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-3534 post type-post status-publish format-standard has-post-thumbnail hentry category-chim-canh-dep tag-chim-canh-2 tag-farmvina tag-nuoi-chim-canh">
+														<a class="elementor-post__thumbnail__link" href="chimcanh.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="190"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2019/08/chim-Họa-Mi-854x540-300x190.jpg"
+																	class="attachment-medium size-medium"
+																	alt="nuôi chim cảnh" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2019/08/chim-Họa-Mi-854x540-300x190.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2019/08/chim-Họa-Mi-854x540-768x486.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2019/08/chim-Họa-Mi-854x540.jpg 854w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="chimcanh.html" target="_blank">
+																	Có dễ nuôi chim cảnh hay không? </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	15/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Nuôi chim cảnh là một thú vui nho nhã giữa cuộc sống
+																	bộn bề tấp nập. Đây cũng là một hình thức kinh doanh
+																	“hốt bạc” của không ít người trong nhiều năm gần
+																	đây. Làm thế nào để có thể nuôi chim được hiệu quả.
+																	Đây là câu hỏi không dễ để có thể trả lời đâu</p>
+															</div>
+															<a class="elementor-post__read-more" href="chimcanh.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-4300 post type-post status-publish format-standard has-post-thumbnail hentry category-alabai tag-cho-alabai tag-cho-canh tag-cho-co tag-huan-luyen-cho-alabai tag-nuoi-cho-alabai tag-tim-hieu-cho-alabai">
+														<a class="elementor-post__thumbnail__link" href="alabai.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="169"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2020/10/maxresdefault-1-300x169.jpg"
+																	class="attachment-medium size-medium"
+																	alt="chó Alabai" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2020/10/maxresdefault-1-300x169.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2020/10/maxresdefault-1-1024x576.jpg 1024w, https://thucung.farmvina.com/wp-content/uploads/2020/10/maxresdefault-1-768x432.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2020/10/maxresdefault-1-390x220.jpg 390w, https://thucung.farmvina.com/wp-content/uploads/2020/10/maxresdefault-1.jpg 1280w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="alabai.html" target="_blank">
+																	Chó Alabai: Giống chó cổ to lớn </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	14/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Chó Alabai là một trong những giống chó cổ có thể tồn
+																	tại được cho đến ngày nay. Được biết đến như một
+																	giống chó có đặc tính hung dữ và hoang dã, liệu
+																	chúng có thể trở thành thú nuôi trong nhà? Nếu có
+																	thể, thì cách huấn luyện và thuần phục ra sao?</p>
+															</div>
+															<a class="elementor-post__read-more" href="alabai.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-3442 post type-post status-publish format-standard has-post-thumbnail hentry category-thu-cung-khac tag-nuoi-rua tag-rua-canh tag-rua-co-gap tag-rua-hermann tag-rua-kim-cuong tag-rua-la tag-rua-sao">
+														<a class="elementor-post__thumbnail__link" href="rua.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="150"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2019/05/rua-300x150.jpg"
+																	class="attachment-medium size-medium" alt="rùa cảnh"
+																	loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2019/05/rua-300x150.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2019/05/rua-768x384.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2019/05/rua-1024x512.jpg 1024w, https://thucung.farmvina.com/wp-content/uploads/2019/05/rua.jpg 1200w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="rua.html" target="_blank">
+																	Rùa biển: Những loại rùa được ưa chuộng nhất </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	14/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Vài triệu đồng một con nhưng dân sành chơi vẫn đua
+																	nhau mua rùa về làm cảnh để cầu mong mang lại may
+																	mắn. Tìm hiểu về rùa nước 1. Rùa Hermann Loài
+																	Hermann Tortoise có nguồn gốc từ phía bắc biển Địa
+																	Trung Hải. Điểm đặc biệt của loài rùa này là phần
+																	đuôi</p>
+															</div>
+															<a class="elementor-post__read-more" href="rua.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-3437 post type-post status-publish format-standard has-post-thumbnail hentry category-thu-cung-khac tag-cac-loai-tho tag-farmvina tag-tho-canh tag-tho-kieng tag-thu-cung-2">
+														<a class="elementor-post__thumbnail__link" href="tho.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="225"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2019/05/tho-sinh-san-28-3-2017-300x225.jpg"
+																	class="attachment-medium size-medium"
+																	alt="thỏ kiểng" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2019/05/tho-sinh-san-28-3-2017-300x225.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2019/05/tho-sinh-san-28-3-2017-768x576.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2019/05/tho-sinh-san-28-3-2017.jpg 800w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="tho.html" target="_blank">
+																	Thỏ kiểng: Giá bán và nơi mua uy tín </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	14/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Ở khắp nơi trên thế giới, cùng với chó mèo, hamster,
+																	v.v, thỏ cũng là một loài thú cưng được nuôi trong
+																	nhà và ngoài vườn để làm cảnh. Để thỏa mong muốn của
+																	nhiều người, bài viết sẽ tổng hợp thông tin về giá
+																	các loại thỏ kiểng, gợi ý một vài địa chỉ</p>
+															</div>
+															<a class="elementor-post__read-more" href="tho.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-3593 post type-post status-publish format-standard has-post-thumbnail hentry category-cham-soc-cho category-poodle tag-cac-loai-cho-poodle tag-cham-soc-cho-poodle tag-cho-poodle tag-gia-ban-cho-poodle">
+														<a class="elementor-post__thumbnail__link" href="poodle.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="150"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2019/11/poodle-1-300x150.jpg"
+																	class="attachment-medium size-medium"
+																	alt="chó Poodle" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2019/11/poodle-1-300x150.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2019/11/poodle-1-768x384.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2019/11/poodle-1-1024x512.jpg 1024w, https://thucung.farmvina.com/wp-content/uploads/2019/11/poodle-1.jpg 1200w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="poodle.html" target="_blank">
+																	Chó Poodle: Cẩm nang chăm sóc </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	13/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Chó Poodle là một trong những giống chó nhỏ được yêu
+																	thích nhất hiện nay vì vẻ ngoài xinh xắn và đáng
+																	yêu. Giống chó Poodle được người nuôi đánh giá là dễ
+																	nuôi, dễ chăm sóc. Tuy nhiên, trước khi nuôi bạn cần
+																	phải chuẩn bị đầy đủ kiến thức cũng như hiểu rõ về
+																</p>
+															</div>
+															<a class="elementor-post__read-more" href="poodle.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-4199 post type-post status-publish format-standard has-post-thumbnail hentry category-pomeranian-phoc-soc tag-cho-canh tag-cho-kieng tag-cho-phoc-soc tag-cho-pomeranian tag-farmvina tag-phoc-soc tag-thu-cung-2">
+														<a class="elementor-post__thumbnail__link" href="phocsoc.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="150"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2020/10/phoc-soc-3-300x150.jpg"
+																	class="attachment-medium size-medium" alt="phốc sóc"
+																	loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2020/10/phoc-soc-3-300x150.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2020/10/phoc-soc-3-1024x512.jpg 1024w, https://thucung.farmvina.com/wp-content/uploads/2020/10/phoc-soc-3-768x384.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2020/10/phoc-soc-3.jpg 1200w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="phocsoc.html" target="_blank">
+																	Phốc Sóc: Cách nuôi như thế nào? Giá bán ra sao?
+																</a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	13/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Có vẻ bề ngoài rất dễ thương như một cục bông, gương
+																	mặt xinh xắn, nhanh nhẹn, chó phốc sóc đã trở thành
+																	một trong những giống chó được yêu thích nhất đối
+																	với người đam mê chó cảnh. Cách nuôi giống chó Phốc
+																	Sóc như thế nào? Giá bán ra sao và mua ở</p>
+															</div>
+															<a class="elementor-post__read-more" href="phocsoc.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+													<article
+														class="elementor-post elementor-grid-item post-4294 post type-post status-publish format-standard has-post-thumbnail hentry category-meo-tam-the tag-farmvina tag-meo-tam-the tag-nuoi-meo tag-nuoi-meo-tam-the tag-phong-thuy tag-phong-thuy-meo-tam-the tag-y-nghia-meo-tam-the">
+														<a class="elementor-post__thumbnail__link" href="tamthe.html"
+															target="_blank">
+															<div class="elementor-post__thumbnail"><img width="300"
+																	height="225"
+																	src="https://thucung.farmvina.com/wp-content/uploads/2020/10/tai-sao-meo-tam-the-duc-lai-hiem-1-300x225.jpg"
+																	class="attachment-medium size-medium"
+																	alt="mèo tam thể" loading="lazy"
+																	srcset="https://thucung.farmvina.com/wp-content/uploads/2020/10/tai-sao-meo-tam-the-duc-lai-hiem-1-300x225.jpg 300w, https://thucung.farmvina.com/wp-content/uploads/2020/10/tai-sao-meo-tam-the-duc-lai-hiem-1-1024x768.jpg 1024w, https://thucung.farmvina.com/wp-content/uploads/2020/10/tai-sao-meo-tam-the-duc-lai-hiem-1-768x576.jpg 768w, https://thucung.farmvina.com/wp-content/uploads/2020/10/tai-sao-meo-tam-the-duc-lai-hiem-1.jpg 1200w"
+																	sizes="(max-width: 300px) 100vw, 300px" /></div>
+														</a>
+														<div class="elementor-post__text">
+															<h3 class="elementor-post__title">
+																<a href="tamthe.html" target="_blank">
+																	Mèo tam thể là mèo gì? Ý nghĩa phong thủy? </a>
+															</h3>
+															<div class="elementor-post__meta-data">
+																<span class="elementor-post-date">
+																	11/10/2022 </span>
+																<span class="elementor-post-avatar">
+																	Không có phản hồi </span>
+															</div>
+															<div class="elementor-post__excerpt">
+																<p>Với màu lông đặc biệt, mèo tam thể không chỉ được
+																	giới chơi thú cảnh đam mê, mà còn được xem là một
+																	linh vật mang lại tài lộc, may mắn. Đặc điểm của
+																	giống mèo này là gì? Ý nghĩa phong thủy của chúng ra
+																	sao? Vì sao chúng ngày càng được ưa chuộng?</p>
+															</div>
+															<a class="elementor-post__read-more" href="tamthe.html"
+																target="_blank">
+																Đọc Tiếp » </a>
+														</div>
+													</article>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div><!-- .entry-content .clear -->
+		</article><!-- #post-## -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	</div> <!-- ast-container -->
+	</div><!-- #content -->
+	</div><!-- #page -->
+	<div id="ast-scroll-top" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both">
+		<span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px"
+				viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+				<path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
+			</svg></span> <span class="screen-reader-text">Scroll to Top</span>
+	</div>
+	<script
+		src='https://thucung.farmvina.com/wp-content/uploads/astra-addon/astra-addon-63197dc70c5c78-91588906.js?ver=3.6.8'
+		id='astra-addon-js-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/astra-addon/addons/blog-pro/assets/js/minified/single-autopost-infinite.min.js?ver=3.6.8'
+		id='astra-single-infinite-js'></script>
+	<script src='https://thucung.farmvina.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4'
+		id='imagesloaded-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.2.2'
+		id='elementor-pro-webpack-runtime-js'></script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.4.4'
+		id='elementor-webpack-runtime-js'></script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.4.4'
+		id='elementor-frontend-modules-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.2.2'
+		id='elementor-sticky-js'></script>
+	<script id='elementor-pro-frontend-js-before'>
+		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/thucung.farmvina.com\/wp-admin\/admin-ajax.php", "nonce": "de399591b3", "urls": { "assets": "https:\/\/thucung.farmvina.com\/wp-content\/plugins\/elementor-pro\/assets\/" }, "i18n": { "toc_no_headings_found": "No headings were found on this page." }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "google": { "title": "Google+", "has_counter": true }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "vi", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/thucung.farmvina.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };
+	</script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.2.2'
+		id='elementor-pro-frontend-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
+		id='elementor-waypoints-js'></script>
+	<script src='https://thucung.farmvina.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1'
+		id='jquery-ui-core-js'></script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6'
+		id='swiper-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.4.4'
+		id='share-link-js'></script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.8.1'
+		id='elementor-dialog-js'></script>
+	<script id='elementor-frontend-js-before'>
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Chia s\u1ebb tr\u00ean Facebook", "shareOnTwitter": "Chia s\u1ebb tr\u00ean Twitter", "pinIt": "Ghim n\u00f3", "download": "T\u1ea3i xu\u1ed1ng", "downloadImage": "T\u1ea3i h\u00ecnh \u1ea3nh", "fullscreen": "To\u00e0n m\u00e0n h\u00ecnh", "zoom": "Thu ph\u00f3ng", "share": "Chia s\u1ebb", "playVideo": "Ch\u01a1i Video", "previous": "Previous", "next": "Next", "close": "\u0110\u00f3ng" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Thi\u1ebft b\u1ecb di \u0111\u1ed9ng", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "M\u00e1y t\u00ednh b\u1ea3ng", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.4.4", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "a11y_improvements": true, "e_import_export": true, "landing-pages": true, "elements-color-picker": true, "admin-top-bar": true, "form-submissions": true }, "urls": { "assets": "https:\/\/thucung.farmvina.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 4720, "title": "Blog%20%7C%20Farmvina%20Th%C3%BA%20C%C6%B0ng", "excerpt": "", "featuredImage": "https:\/\/thucung.farmvina.com\/wp-content\/uploads\/2021\/06\/blog-2-1024x512.jpg" } };
+	</script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.4.4'
+		id='elementor-frontend-js'></script>
+	<script
+		src='https://thucung.farmvina.com/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.2.2'
+		id='pro-preloaded-elements-handlers-js'></script>
+	<script src='https://thucung.farmvina.com/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.4.4'
+		id='preloaded-modules-js'></script>
+	<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6b7148e"
+		data-id="6b7148e" data-element_type="column">
+
+	
+
+</body>
+
+</html>
