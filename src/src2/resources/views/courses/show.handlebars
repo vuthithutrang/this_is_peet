@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel='stylesheet' id='structured-content-frontend-css' href='/css/app.css' />
+</head>
+
+<body>
+    <div class="mt-4">
+        <div id="viewport">
+            <!-- Content -->
+            <div id="content">
+                <div class="container-fluid">
+                    <h1>{{course.name}}</h1>
+                    <center><img src="{{course.image}}" alt="" style="width:800px"></center>
+                    <p>{{course.description}} </p>
+                    <h3 id="a"> {{course.tieude2}}</h3>
+                    <p>{{course.mota1}} {{course.mota2}}</p>
+                    <center><img src=" {{course.img2}}" alt="" style="width:800px"></center>
+                    <h3 id="b"> {{course.tieude3}}</h3>
+                    <p> {{course.mota3}}</p>
+                    <h3 id="c">{{course.tieude4}}</h3>
+                    <center><img src=" {{course.img3}}" alt="" style="width:800px"></center>
+                    <p>{{course.mota4}}</p>
+                    <h3 id="d">{{course.tieude5}}</h3>
+                    <center><img src="{{course.img4}}" alt="" style="width:800px"></center>
+                    <p>{{course.mota5}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <div class="mt-4">
+                <center><p>___________________________________________________________</p></center>
+                <center>
+                    <body>
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous"
+                            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v15.0"
+                            nonce="6nvv8EnL"></script>
+                        <div id="comment_fb">
+                            <div class="fb-comments" data-href="http://127.0.0.1:5500/peet_test/index.html"
+                                data-width="1000" data-numposts="5"></div>
+                        </div>
+                    </body>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
