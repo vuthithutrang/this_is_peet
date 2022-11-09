@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel='stylesheet' id='structured-content-frontend-css' href='/css/app.css' />
+</head>
+
+<body>
+
+    <div class="mt-4">
+        <div class="container">
+            <center>
+                <h3>TÌM KIẾM BÀI VIẾT</h3>
+            </center>
+            <div class="container">
+                <form method="POST" action="/courses/storesearch">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nhập thông tin tìm kiếm theo tên thú cưng</label>
+                        <input type="text" class="form-control" id="pet_tag" name="pet_tag">
+                    </div>
+                    <center><button type="submit" class="btn btn-primary">Tìm kiếm</button></center>
+                </form>
+            </div>
+
+            {{#each courses}}
+
+            <article
+                class="elementor-post elementor-grid-item post-4288 post type-post status-publish format-standard has-post-thumbnail hentry category-meo-ai-cap tag-farmvina tag-gia-ban-meo-ai-cap tag-meo-ai-cap tag-meo-canh tag-mua-meo-ai-cap tag-nuoi-meo-ai-cap">
+                <a class="elementor-post__thumbnail__link" href="{{this.link}}" target="_blank">
+                    <div class="elementor-post__thumbnail"><img width="300" height="150" src="{{this.image}}"
+                            class="attachment-medium size-medium" alt="{{this.link}}" loading="lazy"
+                            srcset="{{this.image}}" sizes="(max-width: 300px) 100vw, 300px" /></div>
+                </a>
+                <div class="elementor-post__text">
+                    <h3 class="elementor-post__title">
+                        <a href="{{this.link}}" target="_blank">
+                            {{this.name}}</a>
+                    </h3>
+                    <div class="elementor-post__meta-data">
+                        <span class="elementor-post-date">
+                            {{this.createdAt}}</span>
+                        <span class="elementor-post-avatar">
+                            Không có phản hồi </span>
+                    </div>
+                    <div class="elementor-post__excerpt">
+                        <p>{{this.description}}</p>
+                    </div>
+                    <a class="elementor-post__read-more" href="{{this.link}}" target="_blank">
+                        Đọc Tiếp » </a>
+                </div>
+            </article>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>
